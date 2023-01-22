@@ -15,4 +15,8 @@ router.post('/login', (req, res) => {
     res.render('../Views/login');
 })
 
+router.get('/register', (req, res) => {
+    res.render('../Views/register');
+})
+
 module.exports = router
