@@ -4,7 +4,7 @@ const path = require("path")
 const router = express.Router();
 
 router.get('/users', (req, res) => {
-    res.sendFile('../Views/index.ejs');
+    res.render('../Views/index');
 })
 
 module.exports = router

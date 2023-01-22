@@ -3,6 +3,7 @@ const express = require('express')
 const userRouter = require('./Routes/userRoute')
 
 const app = express()
+app.set('view engine', 'ejs')
 
 app.use('/', userRouter)
 
