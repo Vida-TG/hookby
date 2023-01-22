@@ -7,4 +7,12 @@ router.get('/users', (req, res) => {
     res.render('../Views/index');
 })
 
+router.get('/login', (req, res) => {
+    res.render('../Views/login');
+})
+
+router.post('/login', (req, res) => {
+    res.render('../Views/login');
+})
+
 module.exports = router
