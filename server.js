@@ -7,13 +7,7 @@ const userRouter = require('./Routes/userRoute')
 const app = express()
 app.set('view engine', 'ejs')
 
-mongoose.connect(process.env.DBURi,
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  }
-)
+mongoose.connect(process.env.DBURi)
     .then((result) => app.listen(7000))
     .catch((err) => console.log("DB connect err"));
 
