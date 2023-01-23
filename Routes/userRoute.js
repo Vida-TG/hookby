@@ -4,19 +4,19 @@ const path = require("path")
 const router = express.Router();
 
 router.get('/users', (req, res) => {
-    res.render('../Views/index');
+    res.render('../views/index');
 })
 
 router.get('/login', (req, res) => {
-    res.render('../Views/login');
+    res.render('../views/login');
 })
 
 router.post('/login', (req, res) => {
-    res.render('../Views/login');
+    res.render('../views/login');
 })
 
 router.get('/register', (req, res) => {
-    res.render('../Views/register');
+    res.render('../views/register');
 })
 
 module.exports = router
