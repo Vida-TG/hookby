@@ -6,13 +6,14 @@ const User = require('../models/User')
 const router = express.Router();
 
 router.get('/users', async (req, res) => {
+    let users = []
     try{
-        const users = await User.find()
-        console.log(users)
+        users = await User.find()
     } catch (err) {
         console.log(err)
     }
-    res.render('../views/index');
+    console.log(users)
+    res.render('../views/index', {users});
 })
 
 router.get('/login', (req, res) => {

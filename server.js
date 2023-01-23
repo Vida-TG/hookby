@@ -11,4 +11,5 @@ mongoose.connect(process.env.DBURi)
     .then((result) => app.listen(7000))
     .catch((err) => console.log("DB connect err"));
 
+app.use(express.urlencoded({extended:false}))
 app.use('/', userRouter)
