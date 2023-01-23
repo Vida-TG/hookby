@@ -1,9 +1,15 @@
 const express = require("express");
 const path = require("path")
 
+const User = require('../models/User')
+
 const router = express.Router();
 
-router.get('/users', (req, res) => {
+router.get('/users', async (req, res) => {
+    try{
+        const users = await User.find()
+        console.log(users)
+    }
     res.render('../views/index');
 })
 

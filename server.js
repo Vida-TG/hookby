@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
-const userRouter = require('./Routes/userRoute')
+const userRouter = require('./routes/userRoute')
 
 const app = express()
 app.set('view engine', 'ejs')
