@@ -9,6 +9,8 @@ router.get('/users', async (req, res) => {
     try{
         const users = await User.find()
         console.log(users)
+    } catch (err) {
+        console.log(err)
     }
     res.render('../views/index');
 })
