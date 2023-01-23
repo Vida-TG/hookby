@@ -38,7 +38,7 @@ router.post('/register', async (req, res) => {
             password: hashedPassword
         })
         await newUser.save()
-        res.redirect('/users');
+        res.redirect('/login');
         res.end()
     } catch(err){
         res.render('../views/register');
