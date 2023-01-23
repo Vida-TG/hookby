@@ -39,10 +39,8 @@ router.post('/register', async (req, res) => {
         })
         await newUser.save()
         res.redirect('/login');
-        res.end()
     } catch(err){
         res.render('../views/register');
-        res.end()
     }
 })
 
