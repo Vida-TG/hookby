@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
-        min: 3,
-        max: 10,
+        min: 4,
+        max: 15,
         require: true,
         unique: true
     },
