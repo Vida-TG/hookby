@@ -6,7 +6,7 @@ const User = require('../models/User')
 
 const router = express.Router();
 
-router.get('/all-users', async (req, res) => {
+router.get('/users', async (req, res) => {
     let users = []
     try{
         users = await User.find()
