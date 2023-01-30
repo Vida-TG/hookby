@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 
 mongoose.connect(process.env.DBURi)
     .then((result) => app.listen(7000))
-    .catch((err) => console.log("DB connect err"));
+    .catch((err) => console.log("DB connection error"));
 
 app.use(express.urlencoded({extended:false}))
 app.use('/', userRouter)
