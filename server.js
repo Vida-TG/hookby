@@ -8,7 +8,7 @@ const app = express()
 app.set('view engine', 'ejs')
 
 mongoose.connect(process.env.DBURi)
-    .then((result) => app.listen(8000))
+    .then((result) => app.listen(8080))
     .catch((err) => console.log("Database connection error"));
 
 app.use(express.urlencoded({extended:false}))
